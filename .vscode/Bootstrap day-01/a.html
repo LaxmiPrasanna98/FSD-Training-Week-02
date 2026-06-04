@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Layout Demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:#f8f9fa;
+        }
+
+        .hero{
+            background:linear-gradient(135deg,#0d6efd,#6610f2);
+            color:white;
+            padding:80px 0;
+        }
+
+        .feature-card{
+            transition:0.3s;
+        }
+
+        .feature-card:hover{
+            transform:translateY(-8px);
+        }
+
+        footer{
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Working with Bootstrap</h1>
+            <p class="lead">
+                Build responsive and modern websites quickly using Bootstrap 5.
+            </p>
+            <button class="btn btn-light btn-lg mt-3">
+                Get Started
+            </button>
+        </div>
+    </section>
+
+    <!-- 12 Column Demo -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Bootstrap 12-Column Grid</h2>
+
+        <div class="row text-center">
+            <div class="col bg-primary text-white p-3 border">1</div>
+            <div class="col bg-info text-white p-3 border">2</div>
+            <div class="col bg-primary text-white p-3 border">3</div>
+            <div class="col bg-info text-white p-3 border">4</div>
+            <div class="col bg-primary text-white p-3 border">5</div>
+            <div class="col bg-info text-white p-3 border">6</div>
+            <div class="col bg-primary text-white p-3 border">7</div>
+            <div class="col bg-info text-white p-3 border">8</div>
+            <div class="col bg-primary text-white p-3 border">9</div>
+            <div class="col bg-info text-white p-3 border">10</div>
+            <div class="col bg-primary text-white p-3 border">11</div>
+            <div class="col bg-info text-white p-3 border">12</div>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container mt-5">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow-lg border-0 feature-card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-danger">
+                            Sidebar
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum et nihil ipsum ad iusto consequuntur nulla suscipit
+                            omnis necessitatibus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card shadow-lg border-0 feature-card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-success">
+                            Main Content
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sed, a. Voluptas expedita non explicabo. Ex libero
+                            doloremque tempora suscipit velit odio ipsa voluptates,
+                            ad ab optio unde error deserunt animi.
+                        </p>
+
+                        <button class="btn btn-success">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Bootstrap Features</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h4>Responsive</h4>
+                        <p>Works on mobile, tablet, and desktop devices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h4>Fast Development</h4>
+                        <p>Ready-made classes and components save time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card text-center shadow">
+                    <div class="card-body">
+                        <h4>Modern UI</h4>
+                        <p>Create attractive interfaces with minimal effort.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <p class="mb-0">
+            © 2026 Bootstrap Demo. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
