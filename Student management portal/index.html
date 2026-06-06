@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Management Portal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .header-section{
+            background-color:#f8f9fa;
+            padding:20px;
+        }
+
+        .card img{
+            height:250px;
+            object-fit:cover;
+        }
+
+        .navbar-nav .nav-link{
+            font-weight:600;
+        }
+       
+    </style>
+</head>
+<body>
+
+    
+    <div class="container-fluid header-section">
+        <div class="row align-items-center">
+
+            <div class="col-md-2 text-center text-md-start">
+                <img src="cvr.png"
+                     alt="Logo"
+                     class="img-fluid"
+                     style="width:120px;height:120px;">
+            </div>
+
+            <div class="col-md-8 text-center">
+                <h1 class="fw-bold mb-0">Student Management Portal</h1>
+            </div>
+
+            
+            <div class="col-md-2"></div>
+
+        </div>
+    </div>
+
+    
+    <nav class="navbar navbar-expand-lg bg-light border-top border-bottom">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                
+                <div class="col-lg-2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+              
+                <div class="col-lg-8">
+                    <ul class="navbar-nav justify-content-center gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="studentprofile.html">
+                                Student Profile
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="contacts.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="dashboard.html">
+                                Dashboard
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 d-flex justify-content-end align-items-center">
+
+                    <input class="form-control me-2"
+                           type="search"
+                           placeholder="Search"
+                           style="width:150px;">
+
+                    <button class="btn btn-outline-success me-2">
+                        Search
+                    </button>
+
+                    <a href="login.html" class="btn btn-primary">
+                        Login
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container text-center py-5">
+
+        <h3 class="mb-4">
+            Welcome to CVR College Student Management Portal
+        </h3>
+
+        <p>
+            CVR College is committed to providing quality education and
+            fostering academic excellence. The institution offers a wide
+            range of undergraduate and postgraduate programs designed to
+            equip students with the knowledge and skills required for
+            successful careers. Through experienced faculty, modern
+            infrastructure, well-equipped laboratories, and a vibrant
+            learning environment, the college encourages innovation,
+            research, and holistic development.
+        </p>
+
+        <p>
+            The Student Management Portal serves as a centralized platform
+            that enables students to access course information, academic
+            records, attendance details, examination schedules, results,
+            announcements, and other important services. With its
+            user-friendly interface, the portal simplifies academic
+            management, enhances communication between students and the
+            institution, and supports a seamless educational experience.
+        </p>
+
+        <a href="register.html"
+           class="btn btn-outline-primary px-5 py-2 mt-3">
+            Register Now
+        </a>
+
+    </div>
+
+    <div class="container my-5">
+
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+
+                    <img src="student1.jpg"
+                         class="card-img-top"
+                         alt="Student Registration">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Student Registration
+                        </h4>
+
+                        <p class="card-text">
+                            Student Registration allows new students to
+                            enroll by entering their personal, academic,
+                            and contact details.
+                        </p>
+
+                        <button class="btn btn-outline-primary">
+                            Learn More
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+
+                    <img src="student2.png"
+                         class="card-img-top"
+                         alt="Attendance Management">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Attendance Management
+                        </h4>
+
+                        <p class="card-text">
+                            Attendance Management helps track and record
+                            student attendance efficiently and accurately.
+                        </p>
+
+                        <button class="btn btn-outline-primary">
+                            Learn More
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card shadow h-100">
+
+                    <img src="student3.png"
+                         class="card-img-top"
+                         alt="Results Management">
+
+                    <div class="card-body">
+
+                        <h4 class="card-title">
+                            Results Management
+                        </h4>
+
+                        <p class="card-text">
+                            Results Management helps store, calculate and
+                            publish student examination results efficiently.
+                        </p>
+
+                        <button class="btn btn-outline-primary">
+                            Learn More
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
