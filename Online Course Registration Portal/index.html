@@ -1,2 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Registration Portal</title>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.hero{
+height:90vh;
+background:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero-content{
+background:rgba(0,0,0,0.6);
+padding:40px;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<a class="navbar-brand" href="#">EduTech</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<div class="hero-content">
+<h1>EduTech Training Institute</h1>
+<h3>Learn Today, Lead Tomorrow</h3>
+<p>Industry-ready training programs for students and professionals.</p>
+<a href="courses.html" class="btn btn-warning">Explore Courses</a>
+</div>
+</section>
+
+<!-- Featured Courses -->
+<div class="container py-5">
+<h2 class="text-center mb-4">Featured Courses</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://picsum.photos/300/200?1" class="card-img-top">
+<div class="card-body">
+<h5>Web Development</h5>
+<p>Duration: 3 Months</p>
+<p>Fee: ₹12,000</p>
+<a href="courses.html" class="btn btn-primary">View Details</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://picsum.photos/300/200?2" class="card-img-top">
+<div class="card-body">
+<h5>Python Programming</h5>
+<p>Duration: 2 Months</p>
+<p>Fee: ₹10,000</p>
+<a href="courses.html" class="btn btn-primary">View Details</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://picsum.photos/300/200?3" class="card-img-top">
+<div class="card-body">
+<h5>Data Science</h5>
+<p>Duration: 4 Months</p>
+<p>Fee: ₹20,000</p>
+<a href="courses.html" class="btn btn-primary">View Details</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://picsum.photos/300/200?4" class="card-img-top">
+<div class="card-body">
+<h5>AI & ML</h5>
+<p>Duration: 5 Months</p>
+<p>Fee: ₹25,000</p>
+<a href="courses.html" class="btn btn-primary">View Details</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://picsum.photos/300/200?5" class="card-img-top">
+<div class="card-body">
+<h5>Java Programming</h5>
+<p>Duration: 3 Months</p>
+<p>Fee: ₹15,000</p>
+<a href="courses.html" class="btn btn-primary">View Details</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://picsum.photos/300/200?6" class="card-img-top">
+<div class="card-body">
+<h5>Cloud Computing</h5>
+<p>Duration: 4 Months</p>
+<p>Fee: ₹18,000</p>
+<a href="courses.html" class="btn btn-primary">View Details</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Testimonials Carousel -->
+<div class="container py-5">
+<h2 class="text-center mb-4">Student Testimonials</h2>
+
+<div id="testimonial" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+
+<div class="carousel-item active text-center">
+<h5>Rahul Kumar</h5>
+<p>"Excellent training and placement support."</p>
+</div>
+
+<div class="carousel-item text-center">
+<h5>Anjali Sharma</h5>
+<p>"The Python course was amazing."</p>
+</div>
+
+<div class="carousel-item text-center">
+<h5>Vikram Reddy</h5>
+<p>"Highly skilled faculty and practical sessions."</p>
+</div>
+
+</div>
+
+<button class="carousel-control-prev" data-bs-target="#testimonial" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" data-bs-target="#testimonial" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-4">
+<p>Address: Hyderabad, Telangana</p>
+<p>Phone: +91 9876543210</p>
+<p>Email: info@edutech.com</p>
+<p>Facebook | Instagram | LinkedIn</p>
+</footer>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<div class="modal-header">
+<h5>Login</h5>
+<button class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+<input type="email" class="form-control mb-3" placeholder="Email">
+<input type="password" class="form-control" placeholder="Password">
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-primary">Login</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
