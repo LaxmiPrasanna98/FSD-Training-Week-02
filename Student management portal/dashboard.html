@@ -1,110 +1,341 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Student Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container my-5">
-        <h1 class="text-center mb-5">Student Dashboard</h1>
-        <div class="row g-4 mb-5">
-            <div class="col-md-3 text-center">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>Total Students</h5>
-                          <button type="button" class="btn btn-primary">600</button>
-                    </div>
-                </div>
-            </div>
-             <div class="col-md-3 text-center">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>Present Students</h5>
-                          <button type="button" class="btn btn-success">400</button>
-                    </div>
-                </div>
-            </div>
-             <div class="col-md-3 text-center">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>Absent Students</h5>
-                          <button type="button" class="btn btn-danger">20</button>
-                    </div>
-                </div>
-            </div>
-             <div class="col-md-3 text-center">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>Placements</h5>
-                          <button type="button" class="btn btn-warning">180</button>
-                    </div>
+
+<div class="container my-5">
+
+    <h1 class="text-center mb-5">Student Dashboard</h1>
+
+
+    <div class="row g-4 mb-5">
+
+        <div class="col-md-3">
+            <div class="card shadow text-center">
+                <div class="card-body">
+                    <h5>Total Students</h5>
+                    <h2 id="totalStudents">0</h2>
                 </div>
             </div>
         </div>
+
+        <div class="col-md-3">
+            <div class="card shadow text-center">
+                <div class="card-body">
+                    <h5>CSE Students</h5>
+                    <h2 id="cseStudents">0</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow text-center">
+                <div class="card-body">
+                    <h5>Other Branches</h5>
+                    <h2 id="otherStudents">0</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow text-center">
+                <div class="card-body">
+                    <h5>Average Attendance</h5>
+                    <h2 id="avgAttendance">0%</h2>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="row justify-content-center">
-    <div class="col-md-8">
-    <div class="table-responsive text-center ms-5">
-          <table class="table table-bordered table-hover text-center">
-            <thead>
+
+    
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <input
+                type="text"
+                id="searchInput"
+                class="form-control"
+                placeholder="Search Student Name..."
+            >
+        </div>
+
+        <div class="col-md-4 text-end">
+            <button class="btn btn-success" id="addStudentBtn">
+                Add Student
+            </button>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover text-center">
+
+            <thead class="table-dark">
                 <tr>
-                <th>Name</th>
-                <th>Roll No</th>
-                <th>Branch</th>
-                <th>Attendence</th>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Branch</th>
+                    <th>Attendance</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Prasanna</td>
+                    <td>5M3</td>
+                    <td>CSE</td>
+                    <td>97%</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="btn btn-danger btn-sm delete-btn">
+                            Delete
+                        </button>
+                    </td>
                 </tr>
 
-            </thead>
-            <tbody>
-            <tr>
-                <td>Prasanna</td>
-                <td>5M3</td>
-                <td>CSE</td>
-                <td><span class="badge bg-success">97%</span></td>
-                
-            </tr>
-            <tr>
-                <td>Vani</td>
-                <td>5Q6</td>
-                <td>CSE</td>
-                <td><span class="badge bg-info">91%</span></td>
-            </tr>
-            
-            <tr>
-                <td>Nishivika</td>
-                <td>7F6</td>
-                <td>CSE</td>
-                <td><span class="badge bg-danger">85%</span></td>
-            </tr>
-            
-            <tr>
-                <td>Mani</td>
-                <td>5F4</td>
-                <td>EEE</td>
-                <td><span class="badge bg-warning">75%</span></td>
-            </tr>
-           
-            <tr>
-                <td>parii</td>
-                <td>5T9</td>
-                <td>Civil</td>
-                <td><span class="badge bg-primary">60%</span></td>
-            </tr>
-            <tr>
-                <td>priya</td>
-                <td>5T0</td>
-                <td>MECH</td>
-                <td><span class="badge bg-dark">65%</span></td>
-            </tr>
+                <tr>
+                    <td>Vani</td>
+                    <td>5Q6</td>
+                    <td>CSE</td>
+                    <td>91%</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="btn btn-danger btn-sm delete-btn">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Nishivika</td>
+                    <td>7F6</td>
+                    <td>CSE</td>
+                    <td>85%</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="btn btn-danger btn-sm delete-btn">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mani</td>
+                    <td>5F4</td>
+                    <td>EEE</td>
+                    <td>75%</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="btn btn-danger btn-sm delete-btn">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Parii</td>
+                    <td>5T9</td>
+                    <td>Civil</td>
+                    <td>60%</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="btn btn-danger btn-sm delete-btn">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Priya</td>
+                    <td>5T0</td>
+                    <td>MECH</td>
+                    <td>65%</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm edit-btn">
+                            Edit
+                        </button>
+
+                        <button class="btn btn-danger btn-sm delete-btn">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+
             </tbody>
+
         </table>
     </div>
-    </div>
-    </div>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+function updateDashboard() {
+
+    let rows = document.querySelectorAll("tbody tr");
+
+    let total = rows.length;
+    let cse = 0;
+    let attendanceSum = 0;
+
+    rows.forEach(function(row){
+
+        let branch = row.cells[2].innerText;
+        let attendance = parseInt(row.cells[3].innerText);
+
+        if(branch === "CSE"){
+            cse++;
+        }
+
+        attendanceSum += attendance;
+    });
+
+    let other = total - cse;
+
+    let avg = total > 0
+        ? Math.round(attendanceSum / total)
+        : 0;
+
+    document.getElementById("totalStudents").innerText = total;
+    document.getElementById("cseStudents").innerText = cse;
+    document.getElementById("otherStudents").innerText = other;
+    document.getElementById("avgAttendance").innerText = avg + "%";
+}
+
+
+// Search Student
+document.getElementById("searchInput")
+.addEventListener("keyup", function(){
+
+    let value = this.value.toLowerCase();
+
+    let rows = document.querySelectorAll("tbody tr");
+
+    rows.forEach(function(row){
+
+        let name =
+            row.cells[0].innerText.toLowerCase();
+
+        if(name.includes(value)){
+            row.style.display = "";
+        }
+        else{
+            row.style.display = "none";
+        }
+
+    });
+
+});
+
+
+// Edit & Delete
+document.querySelector("tbody")
+.addEventListener("click", function(e){
+
+    // Delete
+    if(e.target.classList.contains("delete-btn")){
+
+        if(confirm("Delete this student?")){
+
+            e.target.closest("tr").remove();
+
+            updateDashboard();
+        }
+    }
+
+    // Edit
+    if(e.target.classList.contains("edit-btn")){
+
+        let row = e.target.closest("tr");
+
+        let currentName =
+            row.cells[0].innerText;
+
+        let newName =
+            prompt("Enter New Name", currentName);
+
+        if(newName){
+            row.cells[0].innerText = newName;
+        }
+    }
+
+});
+
+
+// Add Student
+document.getElementById("addStudentBtn")
+.addEventListener("click", function(){
+
+    let name = prompt("Enter Student Name");
+
+    if(name){
+
+        let roll =
+            prompt("Enter Roll Number");
+
+        let branch =
+            prompt("Enter Branch");
+
+        let attendance =
+            prompt("Enter Attendance %");
+
+        let tbody =
+            document.querySelector("tbody");
+
+        let row =
+            document.createElement("tr");
+
+        row.innerHTML = `
+            <td>${name}</td>
+            <td>${roll}</td>
+            <td>${branch}</td>
+            <td>${attendance}%</td>
+            <td>
+                <button class="btn btn-warning btn-sm edit-btn">
+                    Edit
+                </button>
+
+                <button class="btn btn-danger btn-sm delete-btn">
+                    Delete
+                </button>
+            </td>
+        `;
+
+        tbody.appendChild(row);
+
+        updateDashboard();
+    }
+
+});
+
+
+// Initial Dashboard Count
+updateDashboard();
+
+</script>
+
 </body>
 </html>

@@ -12,7 +12,7 @@
     <div class="container mt-4">
         <h2 class="text-center mb-4">Student Registration Form</h2>
 
-        <form>
+        <form id="control-form">
 
            
             <div class="mb-3">
@@ -126,9 +126,15 @@
 </div>
 
         </form>
-        <button type="button" class="btn btn-outline-primary">Register</button>
+        <button type="submit" class="btn btn-outline-primary" form="contact-form">Register</button>
 
     </div>
+    <script>
+        document.getElementById("control-form").addEventListener("submit",function(e){
+         e.preventDefault();
+         alert("Your are successfully Registered");
+        })
+    </script>
 
 </body>
 </html>
